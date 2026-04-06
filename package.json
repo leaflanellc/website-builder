@@ -9,7 +9,10 @@
     "dev": "tsx src/cli.ts",
     "generate": "tsx src/cli.ts generate --spec examples/project-spec.json --out .generated/site",
     "preview": "tsx src/cli.ts preview --site .generated/site --env preview",
-    "publish": "tsx src/cli.ts publish --site .generated/site --env production"
+    "publish": "tsx src/cli.ts publish --site .generated/site --env production",
+    "render": "tsx src/cli.ts render --site .generated/site --out .generated/site-static",
+    "deploy:preview": "npm run generate && npm run render && npm run preview",
+    "deploy:production": "npm run generate && npm run render && npm run publish"
   },
   "keywords": [],
   "author": "",

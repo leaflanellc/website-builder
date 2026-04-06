@@ -3,6 +3,8 @@ import { join } from 'node:path';
 import { generateSiteDraft, materializeDraftSite } from './generator.js';
 import { createPreviewDeployment, publishLatestPreview } from './deploy.js';
 import { readJsonFile } from './io.js';
+import { materializeStaticTemplate } from './template.js';
+import type { SiteDraft } from './types.js';
 
 function getArgValue(args: string[], name: string): string | undefined {
   const index = args.indexOf(name);
@@ -14,7 +16,7 @@ async function run(): Promise<void> {
   const [, , command, ...args] = process.argv;
 
   if (!command) {
-    throw new Error('Missing command. Use generate|preview|publish');
+    throw new Error('Missing command. Use generate|render|preview|publish');
   }
 
   if (command === 'generate') {
@@ -28,6 +30,19 @@ async function run(): Promise<void> {
     const draft = generateSiteDraft(spec);
     await materializeDraftSite(draft, outDir);
     console.log(`Generated draft site for ${draft.projectId} @ ${draft.versionRef}`);
+    return;
+  }
+
+  if (command === 'render') {
+    const siteDir = getArgValue(args, '--site');
+    const outDir = getArgValue(args, '--out');
+    if (!siteDir || !outDir) {
+      throw new Error('render requires --site <draft-dir> --out <static-dir>');
+    }
+    const draft = await readJsonFile<SiteDraft>(join(siteDir, 'site-draft.json'));
+
+    await materializeStaticTemplate(draft, outDir);
+    console.log(`Rendered static template to ${outDir}`);
     return;
   }
 

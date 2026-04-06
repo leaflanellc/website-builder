@@ -1,0 +1,12 @@
+[build]
+  command = "npm run generate && npm run render"
+  publish = ".generated/site-static"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[context.production]
+  command = "npm run generate && npm run render && npm run publish"
+
+[context.deploy-preview]
+  command = "npm run generate && npm run render && npm run preview"
