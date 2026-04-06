@@ -1,0 +1,27 @@
+{
+  "name": "_default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "dev": "tsx src/cli.ts",
+    "generate": "tsx src/cli.ts generate --spec examples/project-spec.json --out .generated/site",
+    "preview": "tsx src/cli.ts preview --site .generated/site --env preview",
+    "publish": "tsx src/cli.ts publish --site .generated/site --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  }
+}

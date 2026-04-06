@@ -1,0 +1,45 @@
+{
+  "specVersion": "1.0",
+  "projectId": "acme-landscaping",
+  "companyName": "ACME Landscaping",
+  "domain": "acmelandscaping.example",
+  "theme": {
+    "primaryColor": "#1f6f4a",
+    "secondaryColor": "#f1e8d8",
+    "fontFamily": "Merriweather"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Landscaping Built For Your Climate",
+      "description": "Design, install, and maintenance services for residential and commercial properties.",
+      "sections": [
+        { "id": "hero-home", "type": "hero", "title": "Outdoor Spaces That Last", "content": "We design and maintain resilient landscapes tailored to your property.", "order": 0 },
+        { "id": "features-home", "type": "features", "title": "Services", "content": "Design, irrigation, hardscapes, seasonal maintenance.", "order": 1 },
+        { "id": "cta-home", "type": "cta", "title": "Book A Site Walk", "content": "Schedule a free consultation with our team.", "order": 2 }
+      ]
+    },
+    {
+      "slug": "services",
+      "title": "Services",
+      "description": "Residential and commercial landscaping services.",
+      "sections": [
+        { "id": "hero-services", "type": "hero", "title": "Full-Service Landscaping", "content": "From planning to weekly maintenance, we cover the full lifecycle.", "order": 0 },
+        { "id": "faq-services", "type": "faq", "title": "Common Questions", "content": "Service areas, timelines, and maintenance plans.", "order": 1 }
+      ]
+    }
+  ],
+  "seo": {
+    "defaultTitle": "ACME Landscaping",
+    "defaultDescription": "Reliable landscaping for homes and businesses."
+  },
+  "analytics": {
+    "provider": "ga4",
+    "trackingId": "G-ACME1234"
+  }
+}
