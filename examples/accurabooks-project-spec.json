@@ -1,0 +1,132 @@
+{
+  "specVersion": "1.0",
+  "projectId": "accurabooks-austin-demo",
+  "companyName": "AccuraBooks",
+  "domain": "accurabooks-demo.leaflane.co",
+  "theme": {
+    "primaryColor": "#0b3b66",
+    "secondaryColor": "#f3f7fb",
+    "fontFamily": "Lora"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about" },
+    { "label": "Reviews", "href": "/reviews" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "pages": [
+    {
+      "slug": "index",
+      "title": "Austin Bookkeeping Partner For Founder-Led Service Businesses",
+      "description": "Monthly bookkeeping, cleanup, and QuickBooks support for Austin owners who need clear numbers and fewer surprises.",
+      "sections": [
+        {
+          "id": "hero-home",
+          "type": "hero",
+          "title": "Bookkeeping You Can Actually Run The Business On",
+          "content": "AccuraBooks helps Austin service-business owners get clean books, reliable monthly reporting, and QuickBooks-backed visibility without hiring in-house accounting staff.",
+          "order": 0
+        },
+        {
+          "id": "trust-home",
+          "type": "features",
+          "title": "Why Local Owners Trust AccuraBooks",
+          "content": "Operating since 2008. Local coverage across Austin, Round Rock, and Georgetown. Led by David Kuzak with accounting and operator experience.",
+          "order": 1
+        },
+        {
+          "id": "services-home",
+          "type": "features",
+          "title": "Revenue-Ready Bookkeeping Service Buckets",
+          "content": "1) Monthly bookkeeping and reconciliations. 2) Cleanup and catch-up projects. 3) QuickBooks setup, migration, and support for owners and small teams.",
+          "order": 2
+        },
+        {
+          "id": "proof-home",
+          "type": "testimonials",
+          "title": "Client Proof Snapshot",
+          "content": "Named proof includes CareerPlug, Nulo, Farmshare Austin, Titan Siding & Windows, FXfit, Masterbind USA, Austin Mobile Drug Testing, and Design 88.",
+          "order": 3
+        },
+        {
+          "id": "cta-home",
+          "type": "cta",
+          "title": "Book A 15-Minute Bookkeeping Review",
+          "content": "Bring your current bookkeeping process and we will identify the highest-impact fix for monthly reporting confidence.",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "slug": "about",
+      "title": "About AccuraBooks",
+      "description": "Local bookkeeping support built for owner-led teams that need clean books and dependable monthly reporting.",
+      "sections": [
+        {
+          "id": "hero-about",
+          "type": "hero",
+          "title": "Austin Bookkeeping Support Since 2008",
+          "content": "AccuraBooks serves founder-led service businesses that need accounting clarity without the overhead of an internal accounting department.",
+          "order": 0
+        },
+        {
+          "id": "operator-about",
+          "type": "custom",
+          "title": "Operator-Led Delivery",
+          "content": "Led by David Kuzak, combining accounting training with practical owner-operator perspective for real-world decision support.",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "slug": "reviews",
+      "title": "Client Reviews",
+      "description": "Trusted by Austin-area teams that need responsive bookkeeping and QuickBooks guidance.",
+      "sections": [
+        {
+          "id": "hero-reviews",
+          "type": "hero",
+          "title": "Trusted By Austin Businesses",
+          "content": "This demo page highlights publicly named customer proof and should be replaced with verified quote excerpts during client-ready production.",
+          "order": 0
+        },
+        {
+          "id": "proof-reviews",
+          "type": "testimonials",
+          "title": "Named Reference Set",
+          "content": "CareerPlug, Nulo, Farmshare Austin, Titan Siding & Windows, FXfit, Masterbind USA, Austin Mobile Drug Testing, and Design 88.",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "title": "Contact",
+      "description": "Request a bookkeeping review and get a clear next-step recommendation.",
+      "sections": [
+        {
+          "id": "hero-contact",
+          "type": "hero",
+          "title": "Start With A Bookkeeping Review",
+          "content": "Share your current accounting setup and we will map the fastest path to clean books and reliable monthly reports.",
+          "order": 0
+        },
+        {
+          "id": "cta-contact",
+          "type": "cta",
+          "title": "Preferred CTA",
+          "content": "Primary CTA for this demo is a 15-minute bookkeeping review call. Production handoff should wire this to a real scheduling endpoint.",
+          "order": 1
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "defaultTitle": "AccuraBooks | Austin Bookkeeping Partner",
+    "defaultDescription": "Revenue-ready bookkeeping support for Austin founder-led service businesses."
+  },
+  "analytics": {
+    "provider": "ga4",
+    "trackingId": "G-ACCURADEMO"
+  }
+}
